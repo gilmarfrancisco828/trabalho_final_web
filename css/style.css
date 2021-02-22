@@ -1,0 +1,886 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: "rockwell";
+}
+
+body{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 10% 90%;
+	grid-template-areas:
+		"nav-area"
+        "cont-area";
+    background-color: black;
+}
+
+div#nav-area{
+	grid-area: nav-area;
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	grid-template-rows: 100%;
+	grid-template-areas:
+		"logo-area name-area button-area";
+}
+
+div#logo-area{
+	grid-area: logo-area;
+}
+
+div#name-area{
+	grid-area: name-area;
+	font-size: 25px;
+	color: #ADFF2F;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+div#button-area{
+	grid-area: button-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+button#button1{
+	padding: 15px 15px 15px 15px;
+
+	background-color: #ADFF2F;
+
+	font-size: 20px;
+
+	color: #6A5ACD;
+}
+
+button#button1:hover{
+	background-color: #ADFF2F;
+
+	color: #6A5ACD;
+
+	border-radius: 20px;
+
+	cursor: pointer;
+}
+
+div#cont-area{
+	grid-area: cont-area;
+
+	display: grid;
+	grid-template-columns: 15% 85%;
+	grid-template-rows: 100%;
+	grid-template-areas:
+		"tool-area itens-area";
+}
+
+div#tool-area{
+	grid-area: tool-area;
+	background-color: #191970;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 30% 10% 10% 10% 10% 30%;
+	grid-template-areas:
+		"logo2-area"
+		"cat1"
+		"cat2"
+		"cat3"
+		"cat4"
+        "auto";
+}
+
+div#logo2-area{
+	grid-area: logo2-area;
+}
+
+img#logo{
+	position: relative;
+	height: 98%;
+	width: auto;
+
+	border-radius: 100px;
+}
+
+div#cat1{
+	grid-area: cat1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt-cat1{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt-cat1:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+div#cat2{
+	grid-area: cat2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt-cat2{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt-cat2:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+div#cat3{
+	grid-area: cat3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt-cat3{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt-cat3:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+div#cat4{
+	grid-area: cat4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt-cat4{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt-:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+div#itens-area{
+	grid-area: itens-area;
+
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 47.5% 47.5% 5%; 
+	grid-template-areas:
+		"item-1-area item-2-area item-3-area item-4-area"
+		"item-5-area item-6-area item-7-area item-8-area"
+		"aux1 button1-area button2-area auto";
+}
+
+div#item-1-area{
+	grid-area: item-1-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+div#item1{
+	position: relative;
+	width: 90%;
+	height: 90%;
+
+	border-radius: 20px;
+
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 65% 10% 10% 15%; 
+	grid-template-areas:
+		"img1"
+		"name1"
+		"price1"
+		"buy1";
+
+}
+
+div#img1{
+	grid-area: img1;
+}
+img#image1{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+div#name1{
+	grid-area: name1;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#price1{
+	grid-area: price1;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#buy1{
+	grid-area: buy1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt1{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt1:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+div#item-2-area{
+	grid-area: item-2-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+
+
+}
+
+div#item2{
+	position: relative;
+	width: 90%;
+	height: 90%;
+
+	border-radius: 20px;
+
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 65% 10% 10% 15%; 
+	grid-template-areas:
+		"img2"
+		"name2"
+		"price2"
+		"buy2";
+
+}
+
+div#img2{
+	grid-area: img2;
+}
+img#image2{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+div#name2{
+	grid-area: name2;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#price2{
+	grid-area: price2;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#buy2{
+	grid-area: buy2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt2{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt2:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+div#item-3-area{
+	grid-area: item-3-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+
+
+}
+
+div#item3{
+	position: relative;
+	width: 90%;
+	height: 90%;
+
+	border-radius: 20px;
+
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 65% 10% 10% 15%; 
+	grid-template-areas:
+		"img3"
+		"name3"
+		"price3"
+		"buy3";
+
+}
+
+
+div#img3{
+	grid-area: img3;
+}
+img#image3{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+div#name3{
+	grid-area: name3;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#price3{
+	grid-area: price3;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#buy3{
+	grid-area: buy3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt3{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt3:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+div#item-4-area{
+	grid-area: item-4-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+
+
+}
+
+div#item4{
+	position: relative;
+	width: 90%;
+	height: 90%;
+
+	border-radius: 20px;
+
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 65% 10% 10% 15%; 
+	grid-template-areas:
+		"img4"
+		"name4"
+		"price4"
+		"buy4";
+
+}
+
+
+div#img4{
+	grid-area: img4;
+}
+img#image4{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+div#name4{
+	grid-area: name4;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#price4{
+	grid-area: price4;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#buy4{
+	grid-area: buy4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt4{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt4:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+div#item-5-area{
+	grid-area: item-5-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+
+
+}
+
+div#item5{
+	position: relative;
+	width: 90%;
+	height: 90%;
+
+	border-radius: 20px;
+
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 65% 10% 10% 15%; 
+	grid-template-areas:
+		"img5"
+		"name5"
+		"price5"
+		"buy5";
+
+}
+
+
+div#img5{
+	grid-area: img5;
+}
+img#image5{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+div#name5{
+	grid-area: name5;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#price5{
+	grid-area: price5;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#buy5{
+	grid-area: buy5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt5{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt5:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+div#item-6-area{
+	grid-area: item-6-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+
+
+}
+
+div#item6{
+	position: relative;
+	width: 90%;
+	height: 90%;
+
+	border-radius: 20px;
+
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 65% 10% 10% 15%; 
+	grid-template-areas:
+		"img6"
+		"name6"
+		"price6"
+		"buy6";
+
+}
+
+
+div#img6{
+	grid-area: img6;
+}
+img#image6{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+div#name6{
+	grid-area: name6;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#price6{
+	grid-area: price6;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#buy6{
+	grid-area: buy6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt6{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt6:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+
+div#item-7-area{
+	grid-area: item-7-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+
+
+}
+
+div#item7{
+	position: relative;
+	width: 90%;
+	height: 90%;
+
+	border-radius: 20px;
+
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 65% 10% 10% 15%; 
+	grid-template-areas:
+		"img7"
+		"name7"
+		"price7"
+		"buy7";
+
+}
+
+
+
+div#img7{
+	grid-area: img7;
+}
+img#image7{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+div#name7{
+	grid-area: name7;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#price7{
+	grid-area: price7;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#buy7{
+	grid-area: buy7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt7{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt7:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+div#item-8-area{
+	grid-area: item-8-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+div#item8{
+	position: relative;
+	width: 90%;
+	height: 90%;
+
+	border-radius: 20px;
+
+	background-color: #6A5ACD;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 65% 10% 10% 15%; 
+	grid-template-areas:
+		"img8"
+		"name8"
+		"price8"
+		"buy8";
+
+}
+
+
+div#img8{
+	grid-area: img8;
+}
+img#image8{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+div#name8{
+	grid-area: name8;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#price8{
+	grid-area: price8;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+div#buy8{
+	grid-area: buy8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+button#bt8{
+	padding: 10px 10px 10px 10px;
+	background-color: #ADFF2F;
+	font-size: 20px;
+	color: #6A5ACD;
+}
+button#bt8:hover{
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+div#aux1{
+	grid-area: aux1;
+}
+
+div#button1-area{
+
+	grid-area: button1-area;
+
+}
+
+
+div.prev-button{
+
+	grid-area: next-button;
+
+	font-size: 20px;
+
+	margin-right: 10px;
+
+}
+
+
+a.prev-page-button{
+
+	position: relative;
+
+	color: #74BBFB;
+	background-color: #282828;
+
+	border-radius: 30px;
+
+	float: right;
+
+	height: 100%;
+	width: 20%;
+
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	text-decoration: none;
+
+}
+
+
+
+div#button2-area{
+	grid-area: button2-area;
+
+}
+
+
+div.next-button{
+
+	grid-area: next-button;
+
+	font-size: 20px;
+
+	margin-left: 10px;
+
+}
+
+
+a.next-page-button{
+
+	position: relative;
+
+	color: #74BBFB;
+	background-color: #282828;
+
+	border-radius: 30px;
+
+	float: left;
+
+	height: 100%;
+	width: 20%;
+
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	text-decoration: none;
+
+}

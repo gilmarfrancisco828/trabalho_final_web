@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NukalangoVendas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<script src="https://kit.fontawesome.com/a03e70c092.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div id="nav-area">
+
+		<div id="logo-area">
+		</div>
+
+		<div id="name-area">
+
+			<h1 id="name">NuKalangoWarStore</h1>
+			
+		</div>
+		
+		<div id="button-area">
+
+			<button id="button1" onclick="finalizar()">Finalizar Compra</button>
+			
+		</div>
+
+	</div>
+
+	<div id="cont-area">
+
+		<div id="tool-area">
+
+			<div id="logo2-area">
+				<img id="logo" src="data/imagens/logo-nukalango.png">
+			</div>
+
+			<div id="cat1">
+				<button id="bt-cat1" onclick="clickArmasFogo()">Armas de Fogo</button>
+			</div>
+
+			<div id="cat2">
+				<button id="bt-cat2" onclick="clickBombas()">Bombas e Afins</button>
+			</div>
+
+			<div id="cat3">
+				<button id="bt-cat3" onclick="clickVeiculos()">Veículos de Guerra</button>
+			</div>
+
+			<div id="cat4">
+				<button id="bt-cat4" onclick="clickArmasBrancas()">Armas Brancas</button>
+			</div>
+			
+		</div>
+
+		<div id="itens-area">
+
+			<div id="item-1-area">
+				<div id="item1">
+					<div id="img1">
+						<img src="data/imagens/tsar.jpg" id="image1">
+					</div>
+					<div id="name1">
+						<p id="p1_1">Bomba Tsar (Nova)</p>
+					</div>
+					<div id="price1">
+						<p id="p1_2">1.000.000R$</p>
+					</div>
+					<div id="buy1">
+						<button id="bt1" onclick="compra1()">Comprar</button>
+					</div>
+				</div>
+			</div>
+			<div id="item-2-area">
+				<div id="item2">
+					<div id="img2">
+						<img src="data/imagens/kit_granada.jpg" id="image2">
+					</div>
+					<div id="name2">
+						<p id="p2_1">Kit Granada Sortido</p>
+					</div>
+					<div id="price2">
+						<p id="p2_2">200R$</p>
+					</div>
+					<div id="buy2">
+						<button id="bt2" onclick="compra2()">Comprar</button>
+					</div>
+				</div>
+			</div>
+			<div id="item-3-area">
+				<div id="item3">
+					<div id="img3">
+						<img src="data/imagens/guilhotina.png" id="image3">
+					</div>
+					<div id="name3">
+						<p id="p3_1">Guilhotina (Pouco Usada)</p>
+					</div>
+					<div id="price3">
+						<p id="p3_2">2.000R$</p>
+					</div>
+					<div id="buy3">
+						<button id="bt3" onclick="compra3()">Comprar</button>
+					</div>
+				</div>
+			</div>
+			<div id="item-4-area">
+				<div id="item4">
+					<div id="img4">
+						<img src="data/imagens/lanca_chamas.jpg" id="image4">
+					</div>
+					<div id="name4">
+						<p id="p4_1">Lança-Chamas</p>
+					</div>
+					<div id="price4">
+						<p id="p4_2">1500R$</p>
+					</div>
+					<div id="buy4">
+						<button id="bt4" onclick="compra4()">Comprar</button>
+					</div>
+				</div>
+			</div>
+			<div id="item-5-area">
+				<div id="item5">
+					<div id="img5">
+						<img src="data/imagens/tsar.jpg" id="image5">
+					</div>
+					<div id="name5">
+						<p id="p5_1">Bomba Tsar (Nova)</p>
+					</div>
+					<div id="price5">
+						<p id="p5_2">1000R$</p>
+					</div>
+					<div id="buy5">
+						<button id="bt5" onclick="compra5()">Comprar</button>
+					</div>
+				</div>
+			</div>
+			<div id="item-6-area">
+				<div id="item6">
+					<div id="img6">
+						<img src="data/imagens/tsar.jpg" id="image6">
+					</div>
+					<div id="name6">
+						<p id="p6_1">Bomba Tsar (Nova)</p>
+					</div>
+					<div id="price6">
+						<p id="p6_2">1000R$</p>
+					</div>
+					<div id="buy6">
+						<button id="bt6" onclick="compra6()">Comprar</button>
+					</div>
+				</div>
+			</div>
+			<div id="item-7-area">
+				<div id="item7">
+					<div id="img7">
+						<img src="data/imagens/tsar.jpg" id="image7">
+					</div>
+					<div id="name7">
+						<p id="p7_1">Bomba Tsar (Nova)</p>
+					</div>
+					<div id="price7">
+						<p id="p7_2">1000R$</p>
+					</div>
+					<div id="buy7">
+						<button id="bt7" onclick="compra7()">Comprar</button>
+					</div>
+				</div>
+			</div>
+			<div id="item-8-area">
+				<div id="item8">
+					<div id="img8">
+						<img src="data/imagens/tsar.jpg" id="image8">
+					</div>
+					<div id="name8">
+						<p id="p8_1">Bomba Tsar (Nova)</p>
+					</div>
+					<div id="price8">
+						<p id="p8_2">1000R$</p>
+					</div>
+					<div id="buy8">
+						<button id="bt8" onclick="compra8()">Comprar</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="aux1"></div>
+
+			<div id="button1-area">
+				<div class="prev-button" id="prev-button-id">	
+					<a href="" class="prev-page-button">
+						<i class="fas fa-angle-double-left"></i>
+					</a>
+				</div>
+				
+			</div>
+
+			<div id="button2-area">
+				<div class="next-button" id="next-button-id">	
+					<a href="" class="next-page-button">
+						<i class="fas fa-angle-double-right"></i>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+	<div class="modalFinalizacao" id="div-content">
+		<button id="close_btn">
+			<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png" alt="Fechar"
+				onclick="fecharModal()">
+		</button>
+		<div class="carrinho_vazio">
+			<h2>O carrinho está vazio, por favor adicione itens!</h2>
+
+		</div>
+		<div id="div-content-inner">
+			<h1>Finalização da Compra</h1><br>
+
+			<div class="entrega">
+				<h2>Resumo do Pedido:</h2>
+				<b>Compra Finalizada com sucesso!</b><br>
+				A entrega dos produtos será feita de <b id="t1"></b> a <b id="t2"></b> dias úteis.
+
+				<p>
+					<b>Endereço de entrega: </b> <span id="end"></span>
+					<br>
+					<b>Quem recebe: </b> <span id="nome"></span>
+				</p>
+
+
+			</div>
+
+			<div class="inputs">
+				<label style="font-size: 25px">Endereço:</label><br>
+				<input type="text" id="ad-field" placeholder="Ex: Rua do Caqui, Bairro da Abobrinha, 557"><br><br>
+				<label style="font-size: 25px">Nome:</label><br>
+				<input type="text" id="name-field" placeholder="Ex: Geralt de Rivia"><br><br>
+			</div>
+
+			<h2>Produtos Comprados:</h2> <br>
+
+			<ul>
+
+			</ul>
+			<div id="lista-produtos" class="products">
+			</div>
+			<div class="prod_item">
+				<div class="prod_qtd"></div>
+				<div class="prod_name"></div>
+				<div class="prod_price"></div>
+			</div>
+			<hr>
+			<h2 id="value-field">Valor Total: </h2>
+			<button id="button1" onclick="finalizaCompra(this)">Comprar</button><br><br>
+
+		</div>
+	</div>
+	<div id="shadow">
+	</div>
+</body>
+	<script src="js/script.js"></script>
+	<script src="js/script2.js"></script>
+</html>
