@@ -18,7 +18,7 @@ function carregaProdutos() {
 			var divProdModel = prod_div.cloneNode(deep = true);
 			divProdModel.children[0].innerHTML = "#1";
 			divProdModel.children[1].innerHTML = produtos[i].name;
-			divProdModel.children[2].innerHTML = produtos[i].price;
+			divProdModel.children[2].innerHTML = "R$ " + produtos[i].price;
 			list.appendChild(divProdModel);
 		}
 

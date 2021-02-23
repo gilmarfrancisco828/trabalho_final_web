@@ -215,8 +215,8 @@ var i = 0;
 
 function exibeProdutos(categoria = "todos", ini = 0) {
 	const exibir = (categoria != "todos"
-		? todos.filter((el) => el.category == categoria).slice(ini, ini + 8)
-		: todos.sort(() => Math.random() - 0.5));
+		? todos.filter((el) => el.category == categoria)
+		: todos).slice(ini, ini + 8);
 
 	for (let i = 0; i < 8; i++) {
 		if (i < exibir.length) {
@@ -230,7 +230,14 @@ function exibeProdutos(categoria = "todos", ini = 0) {
 
 	}
 
-	document.getElementById("prev-button-id").style.display = 'none';
+	if(ini == 0){
+		document.getElementById("prev-button-id").style.display = 'none';
+		document.getElementById("next-button-id").style.display = 'block';
+	}else{
+		document.getElementById("next-button-id").style.display = 'none';
+		document.getElementById("prev-button-id").style.display = 'block';
+	}
+	
 
 }
 

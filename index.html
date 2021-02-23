@@ -33,7 +33,7 @@
 		<div id="tool-area">
 
 			<div id="logo2-area">
-				<img id="logo" src="data/imagens/logo-nukalango.png">
+				<img id="logo" src="data/imagens/logo-nukalango.png" onclick="exibeProdutos()">
 			</div>
 
 			<div id="cat1">
@@ -57,7 +57,7 @@
 		<div id="itens-area">
 
 			<div id="item-1-area">
-				<div id="item1">
+				<div class="item_" id="item1">
 					<div id="img1">
 						<img src="data/imagens/tsar.jpg" id="image1">
 					</div>
@@ -73,7 +73,7 @@
 				</div>
 			</div>
 			<div id="item-2-area">
-				<div id="item2">
+				<div class="item_" id="item2">
 					<div id="img2">
 						<img src="data/imagens/kit_granada.jpg" id="image2">
 					</div>
@@ -89,7 +89,7 @@
 				</div>
 			</div>
 			<div id="item-3-area">
-				<div id="item3">
+				<div class="item_" id="item3">
 					<div id="img3">
 						<img src="data/imagens/guilhotina.png" id="image3">
 					</div>
@@ -105,7 +105,7 @@
 				</div>
 			</div>
 			<div id="item-4-area">
-				<div id="item4">
+				<div class="item_" id="item4">
 					<div id="img4">
 						<img src="data/imagens/lanca_chamas.jpg" id="image4">
 					</div>
@@ -121,7 +121,7 @@
 				</div>
 			</div>
 			<div id="item-5-area">
-				<div id="item5">
+				<div class="item_" id="item5">
 					<div id="img5">
 						<img src="data/imagens/tsar.jpg" id="image5">
 					</div>
@@ -137,7 +137,7 @@
 				</div>
 			</div>
 			<div id="item-6-area">
-				<div id="item6">
+				<div class="item_" id="item6">
 					<div id="img6">
 						<img src="data/imagens/tsar.jpg" id="image6">
 					</div>
@@ -153,7 +153,7 @@
 				</div>
 			</div>
 			<div id="item-7-area">
-				<div id="item7">
+				<div class="item_" id="item7">
 					<div id="img7">
 						<img src="data/imagens/tsar.jpg" id="image7">
 					</div>
@@ -169,7 +169,7 @@
 				</div>
 			</div>
 			<div id="item-8-area">
-				<div id="item8">
+				<div class="item_" id="item8">
 					<div id="img8">
 						<img src="data/imagens/tsar.jpg" id="image8">
 					</div>
@@ -188,8 +188,8 @@
 			<div id="aux1"></div>
 
 			<div id="button1-area">
-				<div class="prev-button" id="prev-button-id">	
-					<a href="" class="prev-page-button">
+				<div class="prev-button" id="prev-button-id" onclick="exibeProdutos(categoria = 'todos',ini = 0)">	
+					<a class="prev-page-button">
 						<i class="fas fa-angle-double-left"></i>
 					</a>
 				</div>
@@ -197,8 +197,8 @@
 			</div>
 
 			<div id="button2-area">
-				<div class="next-button" id="next-button-id">	
-					<a href="" class="next-page-button">
+				<div class="next-button" id="next-button-id" onclick="exibeProdutos(categoria = 'todos',ini = 8)">	
+					<a class="next-page-button">
 						<i class="fas fa-angle-double-right"></i>
 					</a>
 				</div>

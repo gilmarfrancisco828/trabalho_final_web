@@ -85,7 +85,7 @@ div#cont-area{
 div#tool-area{
 	grid-area: tool-area;
 	background-color: #191970;
-
+	margin-top: 1em;
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: 30% 10% 10% 10% 10% 30%;
@@ -105,9 +105,12 @@ div#logo2-area{
 img#logo{
 	position: relative;
 	height: 98%;
-	width: auto;
-
+	width: 98%;
 	border-radius: 100px;
+}
+
+img#logo:hover{
+	cursor:pointer;
 }
 
 div#cat1{
@@ -178,7 +181,7 @@ button#bt-cat4{
 	font-size: 20px;
 	color: #6A5ACD;
 }
-button#bt-:hover{
+button#bt-cat4:hover{
 	border-radius: 20px;
 	cursor: pointer;
 }
@@ -194,7 +197,101 @@ div#itens-area{
 		"item-1-area item-2-area item-3-area item-4-area"
 		"item-5-area item-6-area item-7-area item-8-area"
 		"aux1 button1-area button2-area auto";
+
+	}
+
+@media only screen and (max-width: 720px) {
+	div#itens-area{
+		grid-area: itens-area;
+	
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-areas:
+			"item-1-area item-2-area"
+			"item-3-area item-4-area"
+			"item-5-area item-6-area"
+			"item-7-area item-8-area"
+			"aux1 button1-area"
+			"button2-area auto";
+	}
+	div#nav-area {
+		z-index: 100;		
+		display: inline-table;
+		padding: 1em;
+		width: 100%;
+		text-align: center;
+	}
+	div#cont-area {
+		margin-top: 3em;
+	}
 }
+	
+
+@media only screen and (max-width: 520px) {
+	img#logo{
+		height: 98%;
+		width: auto;
+	}
+	div#itens-area{
+		grid-area: itens-area;
+	
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 47.5% 47.5% 5%; 
+		grid-template-areas:
+			"item-1-area"
+			"item-2-area"
+			"item-3-area"
+			"item-4-area"
+			"item-5-area" 
+			"item-6-area"
+			"item-7-area"
+			"item-8-area"
+			"aux1"
+			"button1-area"
+			"button2-area"
+			"auto";
+	}
+
+	div#cont-area{
+		grid-area: cont-area;
+	
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 100%;
+		grid-template-areas:
+			"tool-area"
+			"itens-area";
+	}
+	div#logo2-area {
+		text-align: center;
+	}
+	div#cont-area {
+		height: 500px;
+	}
+	div#nav-area {
+		z-index: 1000;		
+		display: inline-table;
+		padding: 1em;
+		width: 100%;
+	}
+	button#button1 {
+		padding: 5px 5px 5px 5px;
+		background-color: #ADFF2F;
+		font-size: 1em;
+		color: #6A5ACD;
+		height: 100%;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+	#tool-area div button, #button-area button{
+		width: 90%;
+	}
+	#name-area h1{
+		font-size: 1em;
+		padding: 0.2em;
+	}
+  }
 
 div#item-1-area{
 	grid-area: item-1-area;
